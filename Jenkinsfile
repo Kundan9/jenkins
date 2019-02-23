@@ -15,7 +15,7 @@ stages {
   stage ('stage2'){
     steps{
       echo "${params.servicename}"
-      powershell "New-Item -ItemType file -Path C:\Kundan\${params.servicename}.txt"
+      powershell "New-Item -ItemType file -Path C:/Kundan/${params.servicename}.txt"
     }
 
   }
